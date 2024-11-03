@@ -1,23 +1,27 @@
 
 
 #hero_section{
+    padding-top: 10vh;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-  
-    height: 90vh;
+    justify-content: center;
+    height: 100vh;
+    
+    
 }
 #hero_text_container{
-    margin-left: 60px; 
+    margin-left: 120px;     
+    color: var(--color-fuente-oscura);
 }
 #hero_text_container h2{
-    font-size: xx-large;
+    font-size: 45px;
     margin-bottom: 12px;
 }
 #hero_text_container p{
     font-size: x-large;
+    margin-right: 50px;
 }
 #hero_image_container img{
-   margin: 60px;
+   margin: 120px;
    border-radius: 15px;   
 }

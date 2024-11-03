@@ -1,17 +1,11 @@
 
-#pie_header{
-    background-color: rgb(84, 83, 83);
-    min-height: 40px ;
-    display: flex; 
-    justify-content: center;
-    align-items: center;  
-}
+
 #pie_header nav a{
     min-height: 40px ;
     text-decoration: none;
     font-size:large;
     margin-left: 8px;
-    color: #edf1e9
+    color:var(--color-fuente-clara)
 }
 #pie_header nav a:hover{
     color: #c2f089;   
