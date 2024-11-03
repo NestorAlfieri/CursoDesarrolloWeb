@@ -64,3 +64,12 @@ main{
     color: var(--color-fuente-oscura);
     
 }
+/* Estilos del footer para todas las páginas */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer span{
+    margin-left: 12px;
+}
