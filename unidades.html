@@ -1,11 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/unidades.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
-    <h1>UNIDADES</h1>
+    <header>
+        <div id="encabezado_header">
+            <h1 title="Bienvenido!">Introducción al desarrollo web</h1>
+            <nav>
+                <ul style="display: flex; list-style-type: none;">
+                    <li>
+                        <a title="Ir al inicio" href="/" style="text-decoration: none;">Inicio</a>
+                    </li>
+                    <li>
+                        <a title="Ver unidades" href="unidades.html" style="text-decoration: none;">Unidades</a>
+                    </li>
+                    <li>
+                        <a title="Enviar un mensaje" href="contacto.html" style="text-decoration: none;">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="pie_header">
+            <nav>
+                <a href="#modulo1" title="Contenidos Unidad 1">Unidad 1</a>
+                <a href="#modulo2" title="Contenidos Unidad 2">Unidad 2</a>
+                <a href="#modulo3" title="Contenidos Unidad 3">Unidad 3</a>
+                <a href="#modulo4" title="Contenidos Unidad 4">Unidad 4</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <h2 id="modulo1" >Contenidos del curso:</h2>
+            <section>
+                <div >
+                    <h3>Unidad 1: Nociones básicas y herramientas de desarrollo</h3>
+                    <img src="img/VS_Code.png" alt="Logo CSS" width="30">
+                </div>
+                <table >
+                    <tr>
+                        <th style="width: 15%;">Clase
+                        <th>Temas de la clase</th>
+                    </tr>
+                    <tr>
+                        <td class="clase">Clase 1</td>
+                        <td>
+                            <ul>
+                                <li>Introducción al desarrollo de software</li>
+                                <li>Arquitectura cliente-servidor</li>
+                                <li>Frontend y Backend</li>
+                                <li>Instalación de Visual Studio Code</li>
+                                <li>Herramientas de desarrollo integradas al navegador</li>
+                                <li>Organización de un proyecto: carpetas y archivos</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section id="modulo2" >
+                <div>
+                    <h3>Unidad 2: Introducción a HTML.</h3>
+                    <img src="img/html-logo.svg" alt="Logo HTML" width="30">
+                </div>
+                <table >
+                    <tr>
+                        <th style="width: 15%;">Clase</th>
+                        <th>Temas de la clase </th>
+
+                    </tr>
+                    <tr>
+                        <td class="clase">Clase 2</td>
+                        <td>
+                            <ul>
+                                <li>Estructura de un documento HTML</li>
+                                <li>Elementos semánticos y no semánticos</li>
+                                <li>Layout de un sitio web. header main y footer.</li>
+                                <li>Listas y atributos en HTML</li>
+                                <li>Introducción a Git</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="clase">Clase 3</td>
+                        <td>
+                            <ul>
+                                <li>Imágenes y navegación</li>
+                                <li>Etiquetas &lt;img&gt; y &lt;a&gt;</li>
+                                <li>Enlaces internos y externos</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="clase">Clase 4</td>
+                        <td>
+                            <ul>
+                                <li>Uso de tablas y formularios</li>
+                                <li>Creación y validación básica de formularios</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="clase">Clase 5</td>
+                        <td>
+                            <ul>
+                                <li>Formularios de trivia con opciones múltiples</li>
+                                <li>Uso de &lt;fieldset&gt; y &lt;legend&gt;</li>
+                                <li>Validación de selección</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section id="modulo3">
+                <div >
+                    <h3>Unidad 3: Introducción a CSS.</h3>
+                    <img src="img/css-logo.svg" alt="Logo CSS" width="30">
+                </div>
+                <table >
+                    <tr>
+                        <th style="width: 15%;">Clase</th>
+                        <th>Temas de la clase</th>
+                    </tr>
+                    <tr>
+                        <td class="clase">Clase 6</td>
+                        <td>
+                            <ul>
+                                <li>Qué es CSS y cómo se vincula con HTML.</li>
+                                <li>Sintaxis de CSS.</li>
+                                <li>Selectores (element, .class, #id).</li>
+                                <li>Propiedades (colores, fuentes, márgenes).</li>
+
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="clase">Clase 7</td>
+                        <td>
+                            <ul>
+                                <li>Concepto de modelo de caja (margin, border, padding, content).</li>
+                                <li>Propiedades de texto (fuentes, tamaños, color, alineación).</li>
+                                <li>Espaciado y alineación de texto</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="clase">Clase 8</td>
+                        <td>
+                            <ul>
+                                <li>Diseño con Flexbox</li>
+                                <li>Contenedores y elementos flexibles (display: flex). </li>
+                                <li>Propiedades de Flexbox (justify-content, align-items, flex-direction).</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="clase">Clase 9</td>
+                        <td>
+                            <ul>
+                                <li>Diseño responsivo</li>
+                                <li>Media queries y adaptación a dispositivos móviles</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section id="modulo4">
+                <div>
+                    <h3>Unidad 4: Introducción a JavaScript.</h3>
+                    <img src="img/javascript-logo.svg" alt="Logo CSS" width="30">
+                </div>
+                <table>
+                    <tr>
+                        <th style="width: 15%;">Clase</th>
+                        <th>Temas de la clase</th>
+                    </tr>
+                    <tr>
+                        <td class="clase">Clase 10</td>
+                        <td>
+                            <ul>
+                                <li>¿Qué es JavaScript y cómo se utiliza en la web?</li>
+                                <li>Variables y tipos de datos (var, let, const).</li>
+                                <li>Operadores y expresiones básicas.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="clase">Clase 11</td>
+                        <td>
+                            <ul>
+                                <li>Funciones y estructuras de control</li>
+                                <li>Estructuras de control if, else, switch</li>
+                                <li>Bucles for, while</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="clase">Clase 12</td>
+                        <td>
+                            <ul>
+                                <li>Arrays y objetos en JavaScript</li>
+                                <li>Métodos básicos de manipulación</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="clase">Clase 13</td>
+                        <td>
+                            <ul>
+                                <li>Manipulación del DOM</li>
+                                <li>Selección y modificación de elementos</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="clase">Clase 14</td>
+                        <td>
+                            <ul>
+                                <li>Eventos en JavaScript</li>
+                                <li>Validación de formularios</li>
+                                <li>Prevención de eventos por defecto</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+    <footer style="background-color: rgb(20, 20, 20); line-height: 3; color: antiquewhite; text-align: center;">
+        <span>Stream<strong>be</strong></span>
+        <span>Generación - <i>T</i></span>
+    </footer>
 </body>
+
 </html>

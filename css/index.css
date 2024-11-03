@@ -1,0 +1,23 @@
+
+
+#hero_section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+    height: 90vh;
+}
+#hero_text_container{
+    margin-left: 60px; 
+}
+#hero_text_container h2{
+    font-size: xx-large;
+    margin-bottom: 12px;
+}
+#hero_text_container p{
+    font-size: x-large;
+}
+#hero_image_container img{
+   margin: 60px;
+   border-radius: 15px;   
+}

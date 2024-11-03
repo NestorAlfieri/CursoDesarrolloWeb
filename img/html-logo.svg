@@ -1,0 +1,11 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <!-- Shield shape -->
+    <path d="M71 460L30 0h451l-41 460-185 52" fill="#e34f26"/>
+    <path d="M256 472l149-41 35-394H256" fill="#ef652a"/>
+    
+    <!-- Light section -->
+    <path d="M256 208h-75l-5-58h80V94H118l1 15 14 156h123V208zm0 147h-1l-62-17-4-44h-56l7 87 115 32h1v-58z" fill="#ebebeb"/>
+    
+    <!-- Dark section -->
+    <path d="M255 208v57h70l-7 73-63 17v58l116-32 1-10 13-149 2-15h-132zm0-114v56h137l1-12 3-29 1-15H255z" fill="#ffffff"/>
+</svg>
