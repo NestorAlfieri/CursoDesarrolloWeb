@@ -7,9 +7,9 @@
     --color-fuente-clara-hover:#f5f5f8;
     --color-fondo-transparencia: rgba(62, 61, 61, 0.499);
   }
-  
-*{
+  *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family:monospace ;    
 }
@@ -62,6 +62,8 @@ header{
 main{
     background-color: var(--color-fondo);
     color: var(--color-fuente-oscura);
+    min-height: 95vh;
+    padding-top: 15vh;
     
 }
 /* Estilos del footer para todas las páginas */

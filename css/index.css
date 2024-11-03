@@ -1,19 +1,16 @@
 
 
-#hero_section{
-    padding-top: 10vh;
+#hero_section{   
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
-    
-    
+    justify-content: center;   
 }
 #hero_text_container{
     position: relative;
     margin-left: 120px;     
     color: var(--color-fuente-oscura);
     text-align: end;
+    
 }
 #hero_text_container h2{
     font-size: 45px;
@@ -21,6 +18,7 @@
 }
 #hero_text_container p{
     font-size: x-large;
+    margin-bottom: 32px;
    
 }
 #hero_image_container img{
@@ -28,14 +26,15 @@
    border-radius: 15px;   
 }
 #ver_button{
+    text-decoration: none;
     background-color: rgb(233, 6, 214);
     padding: 12px;
-    border: solid 3px var(--color-fuente-clara);
+    border: solid 1px var(--color-fuente-clara);
     border-radius: 8px;
     margin-top: 16px;
-   
-}
-#ver_button a{
     color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+}
+#ver_button:hover{  
+    box-shadow: 0px 0px 8px 0px rgba(99, 98, 98, 0.75);
 }
