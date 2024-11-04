@@ -11,16 +11,20 @@
     color: #c2f089;   
 }
 #modulo1{
-    padding-top: 20vh; 
+    padding-top: 4vh; 
     text-align: center;
     }
+
 section div{
     display: flex;
     align-items: center;
     justify-content: center;
+   
+    
 }
 h2{
     font-size: 24px;
+    
 }
 h3{
     
@@ -32,8 +36,17 @@ table{
     width: 50vw; 
     border: solid 1px grey;
     margin-left: 25%;
-    font-size: 16px;
+    font-size: 18px;
 }
 .clase{    
     text-align: center;
+}
+.icono-video{
+    color:var(--color-principal);
+    font-size: 26px;
+}
+.recursos_container{
+  align-items: center;
+  padding: 10px; 
+ 
 }
