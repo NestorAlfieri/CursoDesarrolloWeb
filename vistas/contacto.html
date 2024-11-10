@@ -6,7 +6,49 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header
+    style="background-color: rgb(188, 207, 232); display: flex;justify-content: space-between;align-items: end;">
+    <h1 title="Bienvenido!">Introdución al desarrollo web</h1>
+    <nav>
+        <ul style="display: flex; list-style-type: none; ">
+            <li>
+                <a title="Ir a la pagina de contacto" href="/index.html"
+                    style="text-decoration: none;">Inicio</a>
+            </li>
+            <li>
+                <a title="Ir a la pagina de contacto" href="/vistas/unidades.html"  style="text-decoration: none;">Unidades</a>
+            </li>
+            <li>
+                <a title="Ir a la pagina de contacto" href="/vistas/contacto.html"
+                    style="text-decoration: none;">Contacto</a>
+            </li>
+            
+            <li>
+                <a href="/assets/ProgramaCursoDesarrolloWeb (3).pdf" download="Programa_del_curso">Descargar
+                    Programa</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
     <h1>Acá va un formulario de contacto</h1>
+    <form  style="display: flex; flex-direction: column;  width: 30%;">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="escribe tu nombre" required>
+        
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="ingresa tu email" required>
+
+        <label for="mensaje">Escribe tu mensaje</label>
+        <textarea id="mensaje" rows="4"></textarea>
+        <button type="submit"> Enviar</button>
+    </form>
+</main>
+<footer style="background-color: rgb(20, 20, 20); color:antiquewhite; position: absolute;bottom: 0;width: 100%;height: 5%;text-align: center;">        <!-- Dentro del footer, usamos dos span para ubicar en la misma línea-->
+    <span>Stream<strong>be</strong>
+    </span> 
+    <span>Generación - <i>T</i>
+    </span>  
+</footer>
 </body>
 </html>
