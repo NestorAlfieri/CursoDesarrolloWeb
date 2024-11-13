@@ -5,29 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
 </head>
 <!-- todo el contenido del atributo style de cada elemento es CSS en línea,
 y deberia ir en el archivo CSS correspondiente-->
-<body  > 
-    <header style="background-color: rgb(188, 207, 232); display: flex;justify-content: space-between;align-items: end;">
-        <h1 title="Bienvenido!">Introdución al desarrollo web</h1>
+
+<body>
+    <header
+        style="background-color: rgb(188, 207, 232); display: flex;justify-content: space-between;align-items: end;">
+
+        <div>
+            <i class="fa-solid fa-laptop-code fa-3x"></i>
+            <h1 title="Bienvenido!">Introdución al desarrollo web</h1>
+        </div>
         <nav>
             <ul style="display: flex; list-style-type: none; ">
                 <li>
-                    <a title="Ir a la pagina de contacto" href="/index.html"
-                        style="text-decoration: none;">Inicio</a>
+                    <a title="Ir a la pagina de contacto" href="/index.html" style="text-decoration: none;">Inicio</a>
                 </li>
                 <li>
-                    <a title="Ir a la pagina de contacto" href="/vistas/unidades.html"  style="text-decoration: none;">Unidades</a>
+                    <a title="Ir a la pagina de unidades" href="/vistas/unidades.html"
+                        style="text-decoration: none;">Unidades</a>
                 </li>
                 <li>
                     <a title="Ir a la pagina de contacto" href="/vistas/contacto.html"
                         style="text-decoration: none;">Contacto</a>
                 </li>
-                
+
                 <li>
-                    <a href="/assets/ProgramaCursoDesarrolloWeb (3).pdf" download="Programa_del_curso">Descargar
-                        Programa</a>
+                    <a title="Ir a la pagina de trivia" href="/vistas/trivia.html"
+                        style="text-decoration: none;">Trivia</a>
+                </li>
+
+                <li>
+                    <a title="descargar programa" href="/assets/ProgramaCursoDesarrolloWeb (3).pdf" download="Programa_del_curso"><i class="fa-solid fa-file" style="color:black"></i></a>
                 </li>
             </ul>
         </nav>
@@ -35,20 +49,23 @@ y deberia ir en el archivo CSS correspondiente-->
     <main>
         <div>
             <h2>Bienvenido al sitio del Curso!!</h2>
-            <img src="/img/web_design_1080x608.webp"  height="400" alt="imagen_desarrolo_web">
-                    
+            <img src="/img/web_design_1080x608.webp" height="400" alt="imagen_desarrolo_web">
+
             <h3>Cursada 2024</h3>
-            <p>Este sitio será construido durante las clases y estará disponible como recurso de apoyo a los participantes.
+            <p>Este sitio será construido durante las clases y estará disponible como recurso de apoyo a los
+                participantes.
             </p>
         </div>
 
     </main>
     <!--Aquí inicia el footer: usamos dos span para ubicar en la misma linea ambos elementos-->
-    <footer style="background-color: rgb(20, 20, 20); color:antiquewhite; position: relative;bottom: 0;width: 100%;height: 5%;text-align: center;">        <!-- Dentro del footer, usamos dos span para ubicar en la misma línea-->
+    <footer
+        style="background-color: rgb(20, 20, 20); color:antiquewhite; position: relative;bottom: 0;width: 100%;height: 5%;text-align: center;">
+        <!-- Dentro del footer, usamos dos span para ubicar en la misma línea-->
         <span>Stream<strong>be</strong>
-        </span> 
+        </span>
         <span>Generación - <i>T</i>
-        </span>  
+        </span>
     </footer>
 </body>
 

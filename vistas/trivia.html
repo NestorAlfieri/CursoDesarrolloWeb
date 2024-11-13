@@ -34,25 +34,40 @@
             </ul>
         </nav>
     </header>
-<main>
-    <h1>Acá va un formulario de contacto</h1>
-    <form  style="display: flex; flex-direction: column;  width: 30%;">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="escribe tu nombre" required>
-        
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" placeholder="ingresa tu email" required>
 
-        <label for="mensaje">Escribe tu mensaje</label>
-        <textarea id="mensaje" rows="4"></textarea>
-        <button type="submit"> Enviar</button>
-    </form>
+<main style="height: 80vh;">
+
+
+<form action="#" method="post">
+
+    <fieldset>
+<legend>1. ¿Qué significa HTML? </legend>
+
+<label>
+    <input type="radio" name="pregunta1" value="1">
+    Home Tool Markup Language
+</label>
+
+<label>
+    <input type="radio" name="pregunta1" value="2">
+    HyperText Markup Language
+</label>
+<label>
+    <input type="radio" name="pregunta1" value="3">
+    Hyperlinks and Text Markup Language
+
+
+    </fieldset>
+<button type="submit" >Enviar</button>
+</form>
+
+
 </main>
-<footer style="background-color: rgb(20, 20, 20); color:antiquewhite; position: absolute;bottom: 0;width: 100%;height: 5%;text-align: center;">        <!-- Dentro del footer, usamos dos span para ubicar en la misma línea-->
-    <span>Stream<strong>be</strong>
-    </span> 
-    <span>Generación - <i>T</i>
-    </span>  
-</footer>
+    <footer style="background-color: rgb(20, 20, 20); color:antiquewhite; position: relative;bottom: 0;width: 100%;height: 5%;text-align: center;">        <!-- Dentro del footer, usamos dos span para ubicar en la misma línea-->
+        <span>Stream<strong>be</strong>
+        </span> 
+        <span>Generación - <i>T</i>
+        </span>  
+    </footer>
 </body>
 </html>
