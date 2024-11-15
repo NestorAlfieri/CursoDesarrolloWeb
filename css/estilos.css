@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inconsolata:wght@200..900&display=swap');
+
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body{
+   
+}
+header{
+    background-color: rgb(149, 145, 145, 0.8);
+}
+
+#logo{
+    color: greenyellow
+}
+h1{
+    font-family:Doto, Helvetica, sans-serif;
+    color: greenyellow;
+    font-size: 2rem;
+}
+a {
+    text-decoration: none;
+}
+
+.link{
+    color: rgb(39, 39, 39);
+}
+
+#link_diferente{
+    font-size: 32px;
+    color:blue
+}
+
+main{
+    height: 85vh;
+    background: linear-gradient(45deg, rgba(106,147,191,1) 0%, rgba(227,160,211,1) 100%);
+}

@@ -6,42 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
+<!-- link para iconos de font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<!-- link a la hoja de estilos -->
+    <link rel="stylesheet" href="/css/estilos.css">
+<!-- link a la fuente Doto de google fonts -->
 
 </head>
 <!-- todo el contenido del atributo style de cada elemento es CSS en línea,
 y deberia ir en el archivo CSS correspondiente-->
-
 <body>
     <header
-        style="background-color: rgb(188, 207, 232); display: flex;justify-content: space-between;align-items: end;">
+        style="display: flex;justify-content: space-between;align-items: end;">
 
         <div>
-            <i class="fa-solid fa-laptop-code fa-3x"></i>
+            <i id="logo" class="fa-solid fa-laptop-code fa-2x"></i>
             <h1 title="Bienvenido!">Introdución al desarrollo web</h1>
         </div>
         <nav>
             <ul style="display: flex; list-style-type: none; ">
                 <li>
-                    <a title="Ir a la pagina de contacto" href="/index.html" style="text-decoration: none;">Inicio</a>
+                    <a class="link" title="Ir a la pagina de contacto" href="/index.html">Inicio</a>
                 </li>
                 <li>
-                    <a title="Ir a la pagina de unidades" href="/vistas/unidades.html"
-                        style="text-decoration: none;">Unidades</a>
+                    <a class="link" title="Ir a la pagina de unidades" href="/vistas/unidades.html">Unidades</a>
                 </li>
                 <li>
-                    <a title="Ir a la pagina de contacto" href="/vistas/contacto.html"
-                        style="text-decoration: none;">Contacto</a>
+                    <a class="link" title="Ir a la pagina de contacto" href="/vistas/contacto.html">Contacto</a>
                 </li>
 
                 <li>
-                    <a title="Ir a la pagina de trivia" href="/vistas/trivia.html"
-                        style="text-decoration: none;">Trivia</a>
+                    <a class="link" id="link_diferente" title="Ir a la pagina de trivia"
+                        href="/vistas/trivia.html">Trivia</a>
                 </li>
 
                 <li>
-                    <a title="descargar programa" href="/assets/ProgramaCursoDesarrolloWeb (3).pdf" download="Programa_del_curso"><i class="fa-solid fa-file" style="color:black"></i></a>
+                    <a title="descargar programa" href="/assets/ProgramaCursoDesarrolloWeb (3).pdf"
+                        download="Programa_del_curso"><i class="fa-solid fa-file" style="color:black"></i></a>
                 </li>
             </ul>
         </nav>
@@ -49,7 +51,7 @@ y deberia ir en el archivo CSS correspondiente-->
     <main>
         <div>
             <h2>Bienvenido al sitio del Curso!!</h2>
-            <img src="/img/web_design_1080x608.webp" height="400" alt="imagen_desarrolo_web">
+            <!-- <img src="/img/web_design_1080x608.webp" height="400" alt="imagen_desarrolo_web"> -->
 
             <h3>Cursada 2024</h3>
             <p>Este sitio será construido durante las clases y estará disponible como recurso de apoyo a los
