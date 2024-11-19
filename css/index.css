@@ -1,0 +1,37 @@
+
+
+  .hero-section {
+    margin-top: 7vh;
+    padding-top: 10vh;
+    font-size: 1.1rem;  
+    
+    height: 80vh;  
+     /* Imagen de fondo */
+     background-image: url('/img/laptop.png');
+     /* Ajuste del tamaño de la imagen de fondo */
+     background-size: contain;
+     /* Posición de la imagen de fondo */
+     background-position: center;
+     /* Repetición de la imagen de fondo */
+     background-repeat: no-repeat;
+   
+     /* Otros estilos */  
+     /* Alineación y estilo del texto */
+     text-align: center;
+     /* Color del texto en un tono morado. */
+     color: #2a2a2b;
+     /* tamaño de fuente. */   
+     line-height: 2rem; 
+    }
+  .hero-section>h2{
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  .hero-section>img{
+    border-radius: 25px;
+    
+  }
+  .hero-section>p{
+    max-inline-size: 75ch;
+    display: inline-block;
+  }

@@ -1,41 +1,90 @@
+/* importamos fuente Doto */
 @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inconsolata:wght@200..900&display=swap');
+
+/* archivo-colores.css */
+:root {
+    --color-principal: greenyellow;
+    --color-fuente-oscura: rgb(62, 61, 61);
+    --color-fuente-clara: #e2e4e0;  
+    --color-fondo-transparencia: rgba(149, 145, 145, 0.7);
+ }
 
 *{
 margin:0;
 padding: 0;
 box-sizing: border-box;
-
+font-family: monospace;
 }
-
 body{
-   
+    background: linear-gradient(45deg, rgba(106,147,191,1) 0%, rgba(227,160,211,1) 100%);  
 }
 header{
-    background-color: rgb(149, 145, 145, 0.8);
+    background: linear-gradient(45deg, rgb(56, 74, 94) 0%, rgba(227,160,211,1) 100%);  
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 10vh;
 }
-
+.logo-mensaje-container{
+    margin-left: 2vw;
+}
 #logo{
-    color: greenyellow
-}
+    color: var(--color-principal);
+    display: inline-block;
+    }
 h1{
     font-family:Doto, Helvetica, sans-serif;
-    color: greenyellow;
+    color: var(--color-principal);
     font-size: 2rem;
+    display: inline-block;
 }
-a {
+header>nav>ul{
+    list-style-type: none;
+    display: flex;
+    padding-bottom: 15px;
+    margin-right: 2vw;
+}
+.link {
+    
     text-decoration: none;
+    text-transform: uppercase;
+    margin: 010px;
+    color: var(--color-principal);
+    font-size: large;
 }
-
-.link{
-    color: rgb(39, 39, 39);
-}
-
-#link_diferente{
-    font-size: 32px;
-    color:blue
-}
-
 main{
-    height: 85vh;
-    background: linear-gradient(45deg, rgba(106,147,191,1) 0%, rgba(227,160,211,1) 100%);
+   min-height: 80vh;
+
+}
+#download-programa{
+    position: fixed;
+    top:16vh;
+    right: 8vw;
+}
+.download-icon{
+    color: var(--color-principal);
+    font-size: 2rem;
+    width: 4rem;
+    text-align: center;
+    color: var(--color-principal);
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #2a2a2b7b;
+}
+
+
+footer{
+    background-color: rgb(20, 20, 20); 
+    color: var(--color-fuente-clara);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    font-size: large;
+    
+}
+footer>span{
+    display: inline-block;
+    margin-top: 10px;
 }

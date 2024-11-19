@@ -4,32 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- link para iconos de font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<!-- link a la hoja de estilos -->
+    <link rel="stylesheet" href="/css/estilos.css">
 </head>
 <body>
-    <header style="background-color: rgb(188, 207, 232); display: flex;justify-content: space-between;align-items: end;">
-        <h1 title="Bienvenido!">Introdución al desarrollo web</h1>
+    <header>
+        <div class="logo-mensaje-container">
+            <a href="/"><i id="logo" class="fa-solid fa-laptop-code fa-2x"></i></a>
+            <h1 title="Bienvenido!">Introdución al desarrollo web</h1>
+        </div>
         <nav>
-            <ul style="display: flex; list-style-type: none; ">
+            <ul>
                 <li>
-                    <a title="Ir a la pagina de contacto" href="/index.html"
-                        style="text-decoration: none;">Inicio</a>
+                    <a class="link" title="Ir a la pagina de contacto" href="/index.html">Inicio</a>
                 </li>
                 <li>
-                    <a title="Ir a la pagina de unidades" href="/vistas/unidades.html"  style="text-decoration: none;">Unidades</a>
+                    <a class="link" title="Ir a la pagina de unidades" href="/vistas/unidades.html">Unidades</a>
                 </li>
                 <li>
-                    <a title="Ir a la pagina de contacto" href="/vistas/contacto.html"
-                        style="text-decoration: none;">Contacto</a>
-                </li>
-                
-                <li>
-                    <a title="Ir a la pagina de trivia" href="/vistas/trivia.html"
-                        style="text-decoration: none;">Trivia</a>
+                    <a class="link" title="Ir a la pagina de contacto" href="/vistas/contacto.html">Contacto</a>
                 </li>
 
                 <li>
-                    <a href="/assets/ProgramaCursoDesarrolloWeb (3).pdf" download="Programa_del_curso">Descargar
-                        Programa</a>
+                    <a class="link" id="link_diferente" title="Ir a la pagina de trivia"
+                        href="/vistas/trivia.html">Trivia</a>
+                </li>
+
+                <li>
+                    <a id="download-programa" title="descargar programa" href="/assets/ProgramaCursoDesarrolloWeb (3).pdf"
+                        download="Programa_del_curso"><i class="fa-solid fa-file download-icon" ></i></a>
                 </li>
             </ul>
         </nav>
