@@ -1,0 +1,11 @@
+
+#caja{
+    color:rgb(234, 236, 234);
+    background-color: rgb(115, 113, 113);    
+    width: fit-content;
+    padding: 25px 35px ;
+   
+   border: 1px solid blue;
+   border-radius: 8px;
+   margin: 40px;
+}

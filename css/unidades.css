@@ -34,6 +34,41 @@ main>div{
 padding-top: 12vh;
 }
 
+
+#cards-section{
+    padding-top: 150px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card{
+    height: 400px;
+    text-align: center;
+    display: inline-block;  
+    margin-right: 20px;
+    width: 20vw;
+    background-color: rgba(61, 61, 60, 0.289);
+    border-radius: 20px;
+    padding: 30px;
+    color: var(--color-fuente-clara);
+    box-shadow: 0px 4px 4px 0px var(--color-principal);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(51, 50, 50, 0.451)
+}
+
+.unidad-card{
+    margin-top: 20px;
+    font-size: 1.5rem;    
+    margin-bottom: 15px;
+}
+
+
+
+
+
 #modulo1{
     padding-top: 4vh; 
     text-align: center;
