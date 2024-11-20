@@ -5,7 +5,7 @@ header{
     width: 100vw;    
 }
 html {
-    scroll-padding-top: 100px; /* Ajusta este valor según la altura de tu header */
+    scroll-padding-top: 100px; 
 }
 
 #menu-secundario{

@@ -1,7 +1,7 @@
 /* importamos fuente Doto */
 @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inconsolata:wght@200..900&display=swap');
 
-/* archivo-colores.css */
+/* aquí podemos declarar variables que reutilizaremos a lo largo del proyecto */
 :root {
     --color-principal: greenyellow;
     --color-fuente-oscura: rgb(62, 61, 61);
