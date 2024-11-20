@@ -1,10 +1,12 @@
 
-
+     /* Estilos de la página de inicio */
+  
+  
+  
   .hero-section {
     margin-top: 7vh;
     padding-top: 10vh;
-    font-size: 1.1rem;  
-    
+    font-size: 1.1rem;    
     height: 80vh;  
      /* Imagen de fondo */
      background-image: url('/img/laptop.png');
@@ -14,7 +16,7 @@
      background-position: center;
      /* Repetición de la imagen de fondo */
      background-repeat: no-repeat;
-   
+
      /* Otros estilos */  
      /* Alineación y estilo del texto */
      text-align: center;

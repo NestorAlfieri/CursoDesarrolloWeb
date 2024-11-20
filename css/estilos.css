@@ -18,6 +18,7 @@ font-family: monospace;
 body{
     background: linear-gradient(45deg, rgba(106,147,191,1) 0%, rgba(227,160,211,1) 100%);  
 }
+/* estilos del header */
 header{
     background: linear-gradient(45deg, rgb(56, 74, 94) 0%, rgba(227,160,211,1) 100%);  
     display: flex;
@@ -32,7 +33,7 @@ header{
     color: var(--color-principal);
     display: inline-block;
     }
-h1{
+#header-title{
     font-family:Doto, Helvetica, sans-serif;
     color: var(--color-principal);
     font-size: 2rem;
@@ -49,13 +50,15 @@ header>nav>ul{
     text-decoration: none;
     text-transform: uppercase;
     margin: 010px;
-    color: var(--color-principal);
+    color: var(--color-fuente-oscura);
     font-size: large;
+    transition: color 0.3s ease;
 }
-main{
-   min-height: 80vh;
+.link:hover{
+    color:var(--color-principal)
+}
 
-}
+
 #download-programa{
     position: fixed;
     top:16vh;
@@ -67,12 +70,17 @@ main{
     width: 4rem;
     text-align: center;
     color: var(--color-principal);
+    border: 2px solid var(--color-principal);
     border-radius: 50%;
     padding: 10px;
     background-color: #2a2a2b7b;
 }
 
-
+/* estilos del main */
+main{
+    min-height: 80vh; 
+ }
+ /* estilos del footer */
 footer{
     background-color: rgb(20, 20, 20); 
     color: var(--color-fuente-clara);
