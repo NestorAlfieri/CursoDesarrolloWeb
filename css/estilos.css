@@ -28,11 +28,18 @@ header{
     align-items: end;
     height: 10vh;
 }
+#logo-link{
+    text-decoration: none;
+}
 .logo-mensaje-container{
     margin-left: 2vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    gap:20px
 }
 .logo-mensaje-container:hover{
-    text-shadow: 0 0 5px var(--color-principal), 0 0 10px var(--color-principal), 0 0 20px var(--color-principal);
+    text-shadow: 0 0 5px var(--color-principal), 0 0 10px var(--color-principal);
 }
 #logo{
     color: var(--color-principal);
@@ -67,7 +74,7 @@ header>nav>ul{
 }
 .link:hover{
     color:var(--color-principal);
-    text-shadow: 0 0 5px var(--color-principal), 0 0 10px var(--color-principal);
+    text-shadow: 0 0 5px var(--color-principal), 0 0 10px var(--color-fuente-oscura);
 }
 
 #download-programa{
@@ -91,6 +98,7 @@ header>nav>ul{
 main{
     min-height: 83vh; 
  }
+ 
  /* estilos del footer */
 footer{
     background-color: rgb(20, 20, 20); 
