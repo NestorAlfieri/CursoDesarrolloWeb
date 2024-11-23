@@ -5,17 +5,18 @@
 :root {
     --color-principal: greenyellow;
     --color-fuente-oscura: rgb(62, 61, 61);
-    --color-fuente-clara: #e2e4e0;  
+    --color-fuente-clara: #f9faf8;  
     --color-fondo-transparencia: rgba(149, 145, 145, 0.7);
  }
-/* estilos del header */
+/* estilos del selector universal */
 *{
 margin:0;
 padding: 0;
 box-sizing: border-box;
-font-family: monospace;
+font-family:  monospace;
 
 }
+/* estilos del body */
 body{
     background: linear-gradient(45deg, rgba(106,147,191,1) 0%, rgba(227,160,211,1) 100%);  
 }
@@ -30,16 +31,25 @@ header{
 .logo-mensaje-container{
     margin-left: 2vw;
 }
+.logo-mensaje-container:hover{
+    text-shadow: 0 0 5px var(--color-principal), 0 0 10px var(--color-principal), 0 0 20px var(--color-principal);
+}
 #logo{
     color: var(--color-principal);
     display: inline-block;
-    }
+}
 #header-title{
     font-family:Doto, Helvetica, sans-serif;
     color: var(--color-principal);
     font-size: 2rem;
     display: inline-block;
+   
+   
+    
+
 }
+
+
 header>nav>ul{
     list-style-type: none;
     display: flex;
@@ -51,12 +61,13 @@ header>nav>ul{
     text-decoration: none;
     text-transform: uppercase;
     margin: 010px;
-    color: var(--color-fuente-oscura);
+    color: var(--color-fuente-clara);
     font-size: large;
     transition: color 0.3s ease;
 }
 .link:hover{
-    color:var(--color-principal)
+    color:var(--color-principal);
+    text-shadow: 0 0 5px var(--color-principal), 0 0 10px var(--color-principal);
 }
 
 #download-programa{
@@ -78,7 +89,7 @@ header>nav>ul{
 
 /* estilos del main */
 main{
-    min-height: 80vh; 
+    min-height: 83vh; 
  }
  /* estilos del footer */
 footer{
@@ -96,3 +107,6 @@ footer>span{
     display: inline-block;
     margin-top: 10px;
 }
+
+
+

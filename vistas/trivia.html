@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- link para iconos de font awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-<!-- link a la hoja de estilos -->
+    <!-- link a la hoja de estilos -->
     <link rel="stylesheet" href="/css/estilos.css">
     <link rel="stylesheet" href="/css/trivia.css">
 </head>
+
 <body>
     <header>
+        <a href="/">
         <div class="logo-mensaje-container">
-            <a href="/"><i id="logo" class="fa-solid fa-laptop-code fa-2x"></i></a>
-            <h1 id="header-title"title="Bienvenido!">Introdución al desarrollo web</h1>
+            <i id="logo" class="fa-solid fa-laptop-code fa-2x"></i>
+            <h1 id="header-title" title="Bienvenido!">Introdución al desarrollo web</h1>
         </div>
+        </a>
         <nav>
             <ul>
                 <li>
-                    <a class="link" title="Ir a la pagina de contacto" href="/index.html">Inicio</a>
+                    <a class="link" title="Ir a la pagina de inicio" href="/index.html">Inicio</a>
                 </li>
                 <li>
                     <a class="link" title="Ir a la pagina de unidades" href="/vistas/unidades.html">Unidades</a>
@@ -34,48 +38,197 @@
                 </li>
 
                 <li>
-                    <a id="download-programa" title="descargar programa" href="/assets/ProgramaCursoDesarrolloWeb (3).pdf"
-                        download="Programa_del_curso"><i class="fa-solid fa-file download-icon" ></i></a>
+                    <a id="download-programa" title="descargar programa"
+                        href="/assets/ProgramaCursoDesarrolloWeb (3).pdf" download="Programa_del_curso"><i
+                            class="fa-solid fa-file download-icon"></i></a>
                 </li>
             </ul>
         </nav>
     </header>
 
-<main style="height: 80vh;">
-<h1 id="caja" class="clase-caja">Caja</h1>
+    <main>
 
-<form action="#" method="post">
+        <form action="#" method="post">
+<h3 class="trivia-tema">Preguntas HTML</h3>
+            <fieldset>
+                <legend>1. ¿Qué significa HTML?</legend>
+                <label>
+                    <input type="radio" name="pregunta1" value="1">
+                    Home Tool Markup Language
+                </label>
+                <label>
+                    <input type="radio" name="pregunta1" value="2" data-correct="true">
+                    HyperText Markup Language
+                </label>
+                <label>
+                    <input type="radio" name="pregunta1" value="3">
+                    Hyperlinks and Text Markup Language
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>2. ¿Qué etiqueta se usa para crear un enlace en HTML?</legend>
+                <label>
+                    <input type="radio" name="pregunta2" value="1">
+                    &lt;link&gt;
+                </label>
+                <label>
+                    <input type="radio" name="pregunta2" value="2" data-correct="true">
+                    &lt;a&gt;
+                </label>
+                <label>
+                    <input type="radio" name="pregunta2" value="3">
+                    &lt;href&gt;
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>3. ¿Qué etiqueta se usa para insertar una imagen?</legend>
+                <label>
+                    <input type="radio" name="pregunta3" value="1" data-correct="true">
+                    &lt;img&gt;
+                </label>
+                <label>
+                    <input type="radio" name="pregunta3" value="2">
+                    &lt;picture&gt;
+                </label>
+                <label>
+                    <input type="radio" name="pregunta3" value="3">
+                    &lt;image&gt;
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>4. ¿Cuál es el elemento raíz de un documento HTML?</legend>
+                <label>
+                    <input type="radio" name="pregunta4" value="1">
+                    &lt;head&gt;
+                </label>
+                <label>
+                    <input type="radio" name="pregunta4" value="2">
+                    &lt;body&gt;
+                </label>
+                <label>
+                    <input type="radio" name="pregunta4" value="3" data-correct="true">
+                    &lt;html&gt;
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>5. ¿Qué atributo se usa para definir una clase en HTML?</legend>
+                <label>
+                    <input type="radio" name="pregunta5" value="1">
+                    id
+                </label>
+                <label>
+                    <input type="radio" name="pregunta5" value="2" data-correct="true">
+                    class
+                </label>
+                <label>
+                    <input type="radio" name="pregunta5" value="3">
+                    style
+                </label>
+            </fieldset>
+            <h3 class="trivia-tema">Preguntas CSS</h3>
+            <fieldset>
+                <legend>1. ¿Cómo se aplica un color de fondo en CSS?</legend>
+                <label>
+                    <input type="radio" name="pregunta6" value="1" data-correct="true">
+                    background-color
+                </label>
+                <label>
+                    <input type="radio" name="pregunta6" value="2">
+                    color
+                </label>
+                <label>
+                    <input type="radio" name="pregunta6" value="3">
+                    bg-color
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>2. ¿Qué unidad se usa para tamaños relativos en CSS?</legend>
+                <label>
+                    <input type="radio" name="pregunta7" value="1">
+                    px
+                </label>
+                <label>
+                    <input type="radio" name="pregunta7" value="2" data-correct="true">
+                    em
+                </label>
+                <label>
+                    <input type="radio" name="pregunta7" value="3">
+                    pt
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>3. ¿Qué propiedad controla el tamaño del texto?</legend>
+                <label>
+                    <input type="radio" name="pregunta8" value="1">
+                    font-family
+                </label>
+                <label>
+                    <input type="radio" name="pregunta8" value="2" data-correct="true">
+                    font-size
+                </label>
+                <label>
+                    <input type="radio" name="pregunta8" value="3">
+                    text-size
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>4. ¿Qué propiedad se usa para alinear texto al centro?</legend>
+                <label>
+                    <input type="radio" name="pregunta9" value="1">
+                    text-indent
+                </label>
+                <label>
+                    <input type="radio" name="pregunta9" value="2">
+                    justify-content
+                </label>
+                <label>
+                    <input type="radio" name="pregunta9" value="3" data-correct="true">
+                    text-align
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>5. ¿Cuál es la sintaxis correcta para un comentario en CSS?</legend>
+                <label>
+                    <input type="radio" name="pregunta10" value="1">
+                    // Comentario
+                </label>
+                <label>
+                    <input type="radio" name="pregunta10" value="2">
+                    &lt;!-- Comentario --&gt;
+                </label>
+                <label>
+                    <input type="radio" name="pregunta10" value="3" data-correct="true">
+                    /* Comentario */
+                </label>
+            </fieldset>
+            
 
-    <fieldset>
-<legend>1. ¿Qué significa HTML? </legend>
-
-<label>
-    <input type="radio" name="pregunta1" value="1">
-    Home Tool Markup Language
-</label>
-
-<label>
-    <input type="radio" name="pregunta1" value="2">
-    HyperText Markup Language
-</label>
-<label>
-    <input type="radio" name="pregunta1" value="3">
-    Hyperlinks and Text Markup Language
+            <button type="submit">Enviar</button>
+        </form>
 
 
-    </fieldset>
-<button type="submit" >Enviar</button>
-</form>
+        <div class="container">
+            <div class="item item1">Elemento 1</div>
+            <div class="item item2">Elemento 2</div>
+            <div class="item item3">Elemento 3</div>
+          </div>
 
+    </main>
 
-</main>
-
-
-    <footer style="background-color: rgb(20, 20, 20); color:antiquewhite; position: relative;bottom: 0;width: 100%;height: 5%;text-align: center;">        <!-- Dentro del footer, usamos dos span para ubicar en la misma línea-->
+    <footer>
         <span>Stream<strong>be</strong>
-        </span> 
+        </span>
         <span>Generación - <i>T</i>
-        </span>  
+        </span>
     </footer>
 </body>
+
 </html>
