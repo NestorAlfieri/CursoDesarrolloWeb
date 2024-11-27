@@ -1,122 +1,195 @@
-
-
-header{
+/* Estilo del header (menú principal) */
+header {
     position: fixed;
-    width: 100vw;    
-}
-html {
-    scroll-padding-top: 100px; 
-}
-
-#menu-secundario{
-    background-color:rgb(3, 3, 3);
-    min-height: 4vh ;
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
     width: 100vw;
-    position: fixed;
-    top:10vh;
+    top: 0;
+    /* Asegura que el header se quede en la parte superior */
+    z-index: 10;
+    /* Para que esté por encima de otros elementos */
 }
 
-
-
-#menu-secundario nav a{    
-    text-decoration: none;
-    font-size:large;
-    margin-left: 8px;
-    color:var(--color-fuente-clara)
-}
-#menu-secundario nav a:hover{
-    color: #c2f089;   
+/* Ajustar el padding del scroll para que no se tape con el header */
+html {
+    scroll-padding-top: 100px;
 }
 
+#download-programa {
+    display: initial;
+}
 
+/* Título de los contenidos */
+#titulo-contenidos {
+    text-align: center;
+    font-size:var(--fuente-dinamica-subtitulo); 
+    margin-top: 14vh;
+    }
 
-#cards-section{
-    padding: 200px 0px 60px;   
+/* Estilos para las tarjetas (cards) */
+#cards-section {
+    width: 100vw;
+    margin: 02vh 0;
+    padding: 2vh 0px 2vh;
     display: flex;
-    align-items: stretch;/* Asegura que todas las tarjetas tengan el mismo alto */
-    justify-content: space-evenly;
-    
-    
+    flex-wrap: wrap;
+    /* Permite que las tarjetas se ajusten automáticamente */
+    justify-content: center;
+    gap: 20px
 }
 
-.card{
-    display: flex;    
+.card {}
+
+.card a {
+    width: 15vw;
+    height: 15vw;
+    text-decoration: none;
+    
+    display: flex;
     flex-direction: column;
-    flex-basis: 280px;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
     background-color: rgba(61, 61, 60, 0.289);
     border-radius: 20px;
-    padding: 30px;
     color: var(--color-fuente-clara);
-    box-shadow: 4px 4px 20px  var(--color-principal);
+    box-shadow: 0px 0px 10px var(--color-principal);
     border-width: 1px;
     border-style: solid;
     border-color: var(--color-fuente-clara);
-    
+    transition: transform 0.6s ease, box-shadow 0.3s ease;
+    /* Añadimos transición */
 }
 
-.unidad-card{
-    margin-top: 20px;
-    font-size: 1.3rem;    
-    margin-bottom: 15px;
-    text-align: center;
-     text-shadow: 2px 2px 2px rgb(94, 93, 93);     
+/* Efecto de escala al pasar el mouse */
+.card a:hover {
+    transform: scale(1.03);
+    /* Escala el tamaño al 110% */
+    box-shadow: 0px 0px 18px 3px var(--color-principal) ;
+    border-width: 1px;
 }
 
-
-#cards-section>.card>img{
+.img-card {
     height: auto;
-    width: 50%;
-    display: block;
-    margin: 0 25%;
+   max-width: 50%;  
+   border-radius: 20px;    
 }
 
-#titulo-contenidos{
-    text-align: center;
-    font-size:2rem;
+.unidad-card {
+     font-size: var(--fuente-dinamica-subtitulo2);
+     text-shadow: var(--sombra-oscura);
+     width: clamp(20ch, 2vw, 16ch);
+text-align: center;
 }
-#modulo1{
-    padding-top: 4vh; 
-    text-align: center;
-    }
 
-#unidades>section>div{
+
+#cards-section>.card>a>p {
+    display: none;
+}
+
+
+#modulo1 {
+    padding-top: 4vh;
+    text-align: center;
+}
+
+/* Sección de unidades (contenido de las tarjetas) */
+#unidades>section>div {
     display: flex;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
 }
-#unidades h3{
-    
-    padding:18px;
+
+#unidades h3 {
+    padding: 18px;
     padding-top: 24px;
     font-size: 22px;
 }
-table{
-    width: 50vw; 
+
+#unidades img {}
+
+/* Estilos para la tabla */
+table {
+    width: 50vw;
     border: solid 1px grey;
     margin-left: 25%;
     font-size: 18px;
 }
-.clase{    
+
+.clase {
     text-align: center;
 }
-.icono-video{
-    color:red;
+
+.icono-video {
+    color: red;
     font-size: 26px;
     background-color: rgba(240, 248, 255, 0.315);
-    
-}
-.recursos_container{
-  align-items: center;
-  padding: 10px; 
- 
 }
 
-footer{
+/* Contenedor de recursos */
+.recursos_container {
+    align-items: center;
+    padding: 10px;
+}
+
+/* Estilos del footer */
+footer {
     margin-top: 27vh;
     position: static;
 }
+
+/* Media query para pantallas móviles, menores a 765px */
+@media (max-width: 767px) {
+    html {
+        scroll-padding-top: 14vh;
+        /* Ajustar el padding del scroll */
+    }
+
+    #cards-section {
+        width: 100vw;
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+        /* Centrar las tarjetas en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .card a {
+        width: 80vw;
+        height: 30vw;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap: 8px;
+        box-shadow: 0px 0px 5px 1px var(--color-principal);
+    }
+
+    #cards-section>.card>a>.img-card {
+       width: 40px;
+        height: 40px;
+        /* Ajustar el tamaño de las imágenes */
+        margin: 0 auto;
+        /* Ajustar la alineación de las imágenes */
+    }
+
+    #cards-section>.card>a>.texto-card {
+        display: none
+    }
+
+    table {
+        width: 90vw;
+        /* Hacer la tabla más ancha en pantallas pequeñas */
+        margin-left: 5vw;
+        /* Centrar la tabla */
+    }
+
+    #unidades h3 {
+        font-size: 18px;
+        /* Reducir el tamaño de los títulos de unidades */
+    }
+
+   
+}
+
+
 
 

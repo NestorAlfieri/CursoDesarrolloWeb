@@ -1,75 +1,36 @@
 
-
-.container {
-    height: 200px;
-    margin:0 25vw;
-    background-color: rgba(255, 228, 196, 0.26);
-    display: flex; /* Activa flexbox en el item */ 
-    align-items: center; /* Centra el contenido del eje secundario */
-    justify-content:center;  
-    gap: 20px;
-    flex-wrap: wrap;
-    
-    
-}
-
-  .item{
-    flex-basis: 100px ;
-   height: 100px;
-    color:white;
-    background-color: rgba(0, 0, 0, 0.245);
-    border-radius: 10px;
-    border:1px solid yellowgreen;  
-    display: flex; /* Activa flexbox en el item */
-    justify-content: center; /* Centra horizontalmente el contenido */
-    align-items: center; /* Centra verticalmente el contenido */   
-  }
-
-
-  .item1{
-    order:0;
-    align-self: inherit;
-    flex-grow: 0;
-  }
-  .item2{
-    order:0;
-    flex-grow: 0;
-  }
-  .item3{
-    order:0;
-    flex-grow: 0;
-  }
-  
+ 
 
 .trivia-tema{
   font-weight: bold;
-  color:var(--color-fuente-clara);
+  color:var(--color-fuente-oscura);
   padding: 25px 0 0;
-  font-size: 1.6rem;
+  font-size: var(--fuente-dinamica-subtitulo);
   text-align: center;
-  text-shadow: 2px 2px 2px gray;
+  
 }
 
   fieldset {
-    border: 2px solid rgb(250, 249, 249);
+    border: 2px solid gray;
     padding: 10px;
     border-radius: 12px;
-    width: 40%;
-    margin: 25px 30%; 
-    text-shadow: 2px 2px 2px gray; 
-    color:var(--color-fuente-clara); 
+    width: 80%;
+    margin: 25px auto; 
+   
+    color:var(--color-fuente-oscura); 
+    
 }
 
 legend {
     font-weight: bold;   
     padding: 0 10px;
-    font-size: 1.3rem;    
+    font-size: var(--fuente-dinamica-subtitulo2);
 }
 
 label {
     display: block;
     margin: 10px 0;
-    font-size: 16px;
+    font-size:var(--fuente-texto);
     cursor: pointer;
     
    
@@ -88,8 +49,8 @@ input[type="radio"] {
        
 }
 input[type="radio"]:checked {
-  border-color: rgb(247, 243, 243);
-  background-color: rgb(167, 248, 6);
+  border-color: rgba(88, 88, 88, 0.658);
+  background-color: rgb(134, 247, 4);
 }
 footer{
 position: static;

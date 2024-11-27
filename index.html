@@ -5,29 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-
     <!-- link para iconos de font awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <!-- link a la hoja de estilos -->
+    <!-- link a la hoja de estilos general-->
     <link rel="stylesheet" href="/css/estilos.css">
-
+    <!-- link a la hoja de estilos específicos-->
     <link rel="stylesheet" href="/css/index.css">
-    <!-- link a la fuente Doto de google fonts -->
-
 </head>
-<!-- todo el contenido del atributo style de cada elemento es CSS en línea,
-y deberia ir en el archivo CSS correspondiente-->
 
 <body>
     <header>
         <a href="/" id="logo-link">
-        <div class="logo-mensaje-container">
-            <i id="logo" class="fa-solid fa-laptop-code fa-2x"></i>
-            <h1 id="header-title" title="Bienvenido!">Introdución al desarrollo web</h1>
-        </div>
+            <div class="logo-mensaje-container">
+                <i id="logo" class="fa-solid fa-laptop-code fa-2x"></i>
+                <h1 id="header-title" title="Bienvenido!">Introdución al desarrollo web</h1>
+            </div>
         </a>
-        <nav>
+        <nav id="desktop-nav">
             <ul>
                 <li>
                     <a class="link" title="Ir a la pagina de inicio" href="/index.html">Inicio</a>
@@ -51,6 +45,37 @@ y deberia ir en el archivo CSS correspondiente-->
                 </li>
             </ul>
         </nav>
+
+        <!-- Checkbox oculto para controlar el estado del menú -->
+        <input type="checkbox" id="menu-toggle"hidden >
+        <!-- Botón de menú vinculado al checkbox -->
+        <label for="menu-toggle" id="hamburger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <!-- Menú desplegable -->
+        <nav id="mobile-nav">
+            <ul>
+                <li>
+                    <a class="link" title="Ir a la pagina de inicio" href="/index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="link" title="Ir a la pagina de unidades" href="/vistas/unidades.html">Unidades</a>
+                </li>
+                <li>
+                    <a class="link" title="Ir a la pagina de contacto" href="/vistas/contacto.html">Contacto</a>
+                </li>
+
+                <li>
+                    <a class="link" title="Ir a la pagina de trivia" href="/vistas/trivia.html">Trivia</a>
+                </li>
+
+                <li>
+                    <a class="link" title="descargar programa" href="/assets/ProgramaCursoDesarrolloWeb (3).pdf"
+                        download="Programa_del_curso">Programa</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
         <div class="video-background">
@@ -61,13 +86,15 @@ y deberia ir en el archivo CSS correspondiente-->
 
             <div class="hero-section">
                 <h2>Bienvenido al sitio del Curso!!</h2>
-                <img src="/img/web_design_1080x608.webp" height="300" alt="imagen_desarrolo_web">
+                <img src="/img/web_design_1080x608.webp" alt="imagen_desarrolo_web">
 
-                
+
                 <p id="">Este sitio será construido durante las clases y estará disponible como recurso de apoyo a los
                     participantes.
                 </p>
-                <a href="/vistas/unidades.html" id="call-to-action"><p>saber más</p></a>
+                <a href="/vistas/unidades.html" id="call-to-action">
+                    <p>saber más</p>
+                </a>
             </div>
         </div>
     </main>

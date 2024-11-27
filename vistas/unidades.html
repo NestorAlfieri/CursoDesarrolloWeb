@@ -19,7 +19,7 @@
             <h1 id="header-title" title="Bienvenido!">Introdución al desarrollo web</h1>
         </div>
         </a>
-        <nav>
+        <nav id="desktop-nav">
             <ul>
                 <li>
                     <a class="link" title="Ir a la pagina de inicio" href="/index.html">Inicio</a>
@@ -42,43 +42,93 @@
                             class="fa-solid fa-file download-icon"></i></a>
                 </li>
             </ul>
+        </nav>    
+       
+<!-- Checkbox oculto para controlar el estado del menú -->
+<input type="checkbox" id="menu-toggle" hidden>
+<!-- Botón de menú vinculado al checkbox -->
+<label for="menu-toggle" id="hamburger-menu">
+    <i class="fa-solid fa-bars"></i>
+</label>
+<!-- Menú desplegable -->
+<nav id="mobile-nav">
+            <ul >
+                <li>
+                    <a class="link" title="Ir a la pagina de inicio" href="/index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="link" title="Ir a la pagina de unidades" href="/vistas/unidades.html">Unidades</a>
+                </li>
+                <li>
+                    <a class="link" title="Ir a la pagina de contacto" href="/vistas/contacto.html">Contacto</a>
+                </li>
+
+                <li>
+                    <a class="link" title="Ir a la pagina de trivia"
+                        href="/vistas/trivia.html">Trivia</a>
+                </li>
+
+                <li>
+                    <a class="link" title="descargar programa"
+                        href="/assets/ProgramaCursoDesarrolloWeb (3).pdf" download="Programa_del_curso">Programa</a>
+                </li>
+            </ul>
         </nav>
     </header>
-    <div id="menu-secundario">
-        <nav>
-            <a href="#modulo1" title="Contenidos Unidad 1">Unidad 1</a>
-            <a href="#modulo2" title="Contenidos Unidad 2">Unidad 2</a>
-            <a href="#modulo3" title="Contenidos Unidad 3">Unidad 3</a>
-            <a href="#modulo4" title="Contenidos Unidad 4">Unidad 4</a>
-        </nav>
-    </div>
     <main>
-
+        <h2 id="titulo-contenidos">Contenidos del curso:</h2>
         <section id="cards-section">
+
             <div class="card">
-                <img class="img-card" src="/img/VS_Code.png" alt="logo vs code" height="150px" >
-                <h4 class="unidad-card">Unidad 1: Nociones básicas de desarrollo web</h4>
-                <p class="texto-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ratione culpa voluptatum quibusdam repellendus fugit rerum tempore ex corporis. Ratione provident nisi iusto ipsam fuga quasi architecto? Sint, praesentium dolores?</p>
+                <a href="#modulo1" title="Contenidos Unidad 1">
+                    <img class="img-card" src="/img/VS_Code.png" alt="logo vs code" >
+                    <h4 class="unidad-card">Unidad 1: <br>Nociones básicas de desarrollo web</h4>
+                    <p class="texto-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ratione culpa
+                        voluptatum quibusdam repellendus fugit rerum tempore ex corporis. Ratione provident nisi iusto
+                        ipsam fuga quasi architecto? Sint, praesentium dolores?</p>
+                </a>
             </div>
+
+
             <div class="card">
-                <img class="img-card" src="/img/html-logo.svg" alt="logo html" height="150px">
-                <h4 class="unidad-card">Unidad 2: Introduccion a HTML</h4>
-                <p class="texto-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ratione culpa voluptatum quibusdam repellendus fugit rerum tempore ex corporis. Ratione provident nisi iusto ipsam fuga quasi architecto? Sint, praesentium dolores?</p>
+                <a href="#modulo2" title="Contenidos Unidad 2">
+                  
+                    <img class="img-card" src="/img/html-logo.svg" alt="logo html" >              
+                    <h4 class="unidad-card">Unidad 2: <br>Introduccion a HTML</h4>
+                    <p class="texto-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ratione culpa
+                        voluptatum quibusdam repellendus fugit rerum tempore ex corporis. Ratione provident nisi iusto
+                        ipsam
+                        fuga quasi architecto? Sint, praesentium dolores?</p>
+                </a>
             </div>
+
+
             <div class="card">
-                <img class="img-card" src="/img/css-logo.svg" alt="logo css" height="150px">
-                <h4 class="unidad-card">Unidad 3: introducción a CSS</h4>
-                <p class="texto-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ratione culpa voluptatum quibusdam repellendus fugit rerum tempore ex corporis. Ratione provident nisi iusto ipsam fuga quasi architecto? Sint, praesentium dolores?</p>
+                <a href="#modulo3" title="Contenidos Unidad 3">
+                    <img class="img-card" src="/img/css-logo.svg" alt="logo css" >
+                    <h4 class="unidad-card">Unidad 3:<br> introducción a CSS</h4>
+                    <p class="texto-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ratione culpa
+                        voluptatum quibusdam repellendus fugit rerum tempore ex corporis. Ratione provident nisi iusto
+                        ipsam fuga quasi architecto? Sint, praesentium dolores?</p>
+                </a>
             </div>
+
+
             <div class="card">
-                <img class="img-card" src="/img/javascript-logo.svg" alt="logo js" height="150px">
-                <h4 class="unidad-card">Unidad 4: Introducción a JavaScript</h4>
-                <p class="texto-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ratione culpa voluptatum quibusdam repellendus fugit rerum tempore ex corporis. Ratione provident nisi iusto ipsam fuga quasi architecto? Sint, praesentium dolores?</p>
+                <a href="#modulo4" title="Contenidos Unidad 4">
+                    <img class="img-card" src="/img/javascript-logo.svg" alt="logo js" >
+                    <h4 class="unidad-card">Unidad 4: <br>Introducción a JavaScript</h4>
+                    <p class="texto-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ratione culpa
+                        voluptatum quibusdam repellendus fugit rerum tempore ex corporis. Ratione provident nisi iusto
+                        ipsam
+                        fuga quasi architecto? Sint, praesentium dolores?</p>
+                </a>
             </div>
+
         </section>
 
         <div id="unidades">
-            <h2 id="titulo-contenidos">Contenidos del curso:</h2>
+           
             <section id="modulo1">
                 <div>
                     <h3>Unidad 1: Nociones básicas y herramientas de desarrollo</h3>

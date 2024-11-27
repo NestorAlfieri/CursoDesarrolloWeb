@@ -4,15 +4,14 @@
 
     /* Contenedor principal */
     .video-background {
-        position: relative;   
-        overflow: hidden;
+        position: relative; 
+      
+       overflow: hidden;
     }
 
     /* Video de fondo */
     .video-background video {
         position: absolute;       
-        width: 100%;
-        height: 100%;
         object-fit: cover; /* Asegura que el video cubra toda el área */
         z-index: -1; /* Coloca el video debajo del contenido */
     }
@@ -43,12 +42,13 @@
     }
   .hero-section>h2{
     margin-bottom: 1.5rem;
-    font-size: 2rem;    
+    font-size:2rem;    
     }
   .hero-section>img{
     border-radius: 25px;
     display: block;
-      
+    width: 34%;
+    margin: 0 33%;
     
   }
   #call-to-action{
@@ -79,5 +79,37 @@
     font-weight: bold;
     font-size: 1.2rem;
    
+  }
+
+
+/* media query para pantallas moviles, menores a 765 px */
+  @media (max-width: 767px) {
+    .video-background video{
+     
+    }
+   
+    .hero-section{
+      background: transparent;
+      color: var(--color-fuente-clara);
+      
+      width: 80vw;
+      margin: 0 10vw;
+      height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap:25px
+      
+    }
+    .hero-section>h2{
+      text-shadow: 0 0 5px var(--color-fuente-oscura), 0 0 10px var(--color-fuente-oscura);
+  }
+  .hero-section>img{
+    width: 80vw;
+  }
+  .hero-section>p{
+    text-shadow: 0 0 5px var(--color-fuente-oscura), 0 0 10px var(--color-fuente-oscura);
+    
+}
   }
  

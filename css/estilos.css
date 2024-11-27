@@ -5,84 +5,104 @@
 :root {
     --color-principal: greenyellow;
     --color-fuente-oscura: rgb(62, 61, 61);
-    --color-fuente-clara: #f9faf8;  
+    --color-fuente-clara: #f9faf8;
+    --sombra-oscura: 2px 2px 8px rgba(3, 3, 3, 0.445);
     --color-fondo-transparencia: rgba(149, 145, 145, 0.7);
- }
+    --fuente-dinamica-subtitulo: clamp(1.2rem, 4vw, 2rem);
+    --fuente-dinamica-subtitulo2: clamp(1rem, 3vw, 1.5rem);
+    --fuente-dinamica-texto: clamp(1rem, 2vw, 1.5rem);
+}
+
 /* estilos del selector universal */
-*{
-margin:0;
-padding: 0;
-box-sizing: border-box;
-font-family:  monospace;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
 
 }
+
 /* estilos del body */
-body{
-    background: linear-gradient(45deg, rgba(106,147,191,1) 0%, rgba(227,160,211,1) 100%);  
+body {
+    background: linear-gradient(45deg, rgba(106, 147, 191, 1) 0%, rgba(227, 160, 211, 1) 100%);
+
 }
+
 /* estilos del header */
-header{
-    background: linear-gradient(45deg, rgb(56, 74, 94) 0%, rgba(227,160,211,1) 100%);  
+header {
+    background: linear-gradient(45deg, rgb(56, 74, 94) 0%, rgba(227, 160, 211, 1) 100%);
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
     height: 10vh;
 }
-#logo-link{
+
+#logo-link {
     text-decoration: none;
 }
-.logo-mensaje-container{
+
+.logo-mensaje-container {
     margin-left: 2vw;
     height: 10vh;
     display: flex;
     align-items: center;
-    gap:20px
+    gap: 20px;
+
+
 }
-.logo-mensaje-container:hover{
+
+.logo-mensaje-container:hover {
     text-shadow: 0 0 5px var(--color-principal), 0 0 10px var(--color-principal);
 }
-#logo{
+
+#logo {
     color: var(--color-principal);
     display: inline-block;
+    font-size:  2rem;
 }
-#header-title{
-    font-family:Doto, Helvetica, sans-serif;
+
+#header-title {
+    font-family: Doto, Helvetica, sans-serif;
     color: var(--color-principal);
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 2vw, 2rem);
     display: inline-block;
-   
-   
-    
+
+
+
 
 }
 
 
-header>nav>ul{
+header>nav>ul {
     list-style-type: none;
     display: flex;
     padding-bottom: 15px;
     margin-right: 2vw;
 }
+
 .link {
-    
+
     text-decoration: none;
     text-transform: uppercase;
-    margin: 010px;
+    margin: 0 10px;
     color: var(--color-fuente-clara);
     font-size: large;
     transition: color 0.3s ease;
 }
-.link:hover{
-    color:var(--color-principal);
+
+.link:hover {
+    color: var(--color-principal);
     text-shadow: 0 0 5px var(--color-principal), 0 0 10px var(--color-fuente-oscura);
 }
 
-#download-programa{
+#download-programa {
     position: fixed;
-    top:16vh;
-    right:4vw;
+    top: 14vh;
+    right: 4vw;
+    display: none;
 }
-.download-icon{
+
+.download-icon {
     color: var(--color-principal);
     font-size: 2rem;
     width: 4rem;
@@ -92,29 +112,115 @@ header>nav>ul{
     border-radius: 50%;
     padding: 10px;
     background-color: #2a2a2b7b;
+
 }
 
 /* estilos del main */
-main{
-    min-height: 83vh; 
- }
- 
- /* estilos del footer */
-footer{
-    background-color: rgb(20, 20, 20); 
+main {
+    min-height: 85vh;
+}
+
+/* estilos del footer */
+footer {
+    background-color: rgb(20, 20, 20);
     color: var(--color-fuente-clara);
     position: absolute;
     bottom: 0;
-    width: 100%;
-    height: 5%;
+    width: 100vw;
+    height: 5vh;
     text-align: center;
     font-size: large;
-    
+
 }
-footer>span{
+
+footer>span {
     display: inline-block;
     margin-top: 10px;
 }
 
+#hamburger-menu,
+#mobile-nav {
+    display: none;
+}
+
+/* media query para pantallas moviles, menores a 765 px */
+@media (max-width: 767px) {
+   
+
+    .logo-mensaje-container {
+        width: 100vw;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #header-title {
+        text-shadow: 0 0 5px var(--color-principal), 0 0 10px var(--color-principal);
+        width: 15ch;
+    }
+
+    #logo {
+        
+        text-shadow: 0 0 5px var(--color-principal);
+    }
+
+    #desktop-nav {
+        display: none
+    }
+
+    /* Botón del menú hamburguesa */
+    /* Botón del menú hamburguesa */
+    #hamburger-menu {
+        position: absolute;
+        right: 0;
+
+        border-style: none;
+        display: flex;
+        height: 10vh;
+        align-items: center;
+
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    /* Menú desplegable inicial */
+    #mobile-nav {
+        display: initial;
+        width: 100vw;
+        position: absolute;
+        top: 10vh;
+        /* Inicia justo debajo del botón */
+        max-height: 0;
+        /* Altura inicial del menú cerrado */
+        overflow: hidden;
+        /* Oculta contenido al estar cerrado */
+        transition: max-height 0.4s ease-in-out;
+        /* Transición suave */
+        z-index: 1;
+    }
+
+    /* Estado abierto del menú cuando el checkbox está marcado */
+    #menu-toggle:checked~#mobile-nav {
+        max-height: 140px;   
+    }
+
+    #mobile-nav ul {
+        background: linear-gradient(45deg, rgb(56, 74, 94) 0%, rgba(227, 160, 211, 1) 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 2vh;
+        padding-right: 5vw;
+        margin: 0;
+        gap: 5px
+    }
+
+    .fa-bars {
+        color: rgb(167, 248, 5);
+        font-size: clamp(1.6rem, 2vw, 2rem);
+        margin-right: 5vw;
+        text-shadow: 0 0 5px var(--color-fuente-oscura), 0 0 7px var(--color-principal);
+    }
 
 
+}
