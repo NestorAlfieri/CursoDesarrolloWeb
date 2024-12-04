@@ -1,50 +1,33 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const form = document.querySelector("form");
-    const button = document.getElementById("boton-enviar-resultados");
-
-    button.addEventListener("click", (event) => {
-        event.preventDefault(); // Prevenir la recarga de la página
-        
-        let score = 0; // Puntaje inicial
-        const totalQuestions = document.querySelectorAll("fieldset").length;
-
-        // Iterar sobre cada pregunta para comprobar las respuestas
-        const fieldsets = document.querySelectorAll("fieldset");
-        fieldsets.forEach((fieldset) => {
-            const correctInput = fieldset.querySelector('input[data-correct="true"]');
-            if (correctInput && correctInput.checked) {
-                score++;
-            }
-        });
-
-        // Mostrar el resultado
-        alert(`Tu puntaje es: ${score}/${totalQuestions}`);
-    });
+// Selecciona el botón de "VER RESULTADOS" y añade un evento al hacer clic
+const button = document.getElementById("boton-enviar-resultados");
+button.addEventListener("click", function (event) {
+  event.preventDefault(); // Evita que el formulario se envíe (si es un botón dentro de un formulario)
+  calcularResultado();    // Llama a la función para calcular y mostrar el resultado
 });
 
+function calcularResultado() {
+  let score = 0; // Inicializa el puntaje del usuario
+  const totalQuestions = document.querySelectorAll("fieldset").length; // Obtiene el número total de preguntas
+  const fieldsets = document.querySelectorAll("fieldset"); // Selecciona todos los fieldsets (contenedores de preguntas)
+   
+  // Recorre cada fieldset para verificar las respuestas correctas
+  fieldsets.forEach(function (fieldset) {
+    const correctInput = fieldset.querySelector('input[data-correct="true"]'); // Encuentra la opción correcta usando el atributo data-correct
+    if (correctInput && correctInput.checked) { // Si existe una opción correcta y está seleccionada
+      score++; // Incrementa el puntaje
+    }
+  });
 
+  // Muestra el contenedor donde se mostrará el resultado
+  let result = document.getElementById("resultado");
+  result.style.display = "block"; // Asegura que el contenedor sea visible
 
+  // Escribe el resultado final en el texto de resultado
+  let resultText = document.getElementById("resultado-texto");
+  resultText.innerText = `Tu puntaje es: ${score}/${totalQuestions}`; // Muestra el puntaje en relación con el total de preguntas
 
-function mostrarColor() {
-    
-var color = 'rojo';
-  console.log(color); // 'rojo', porque color es global
+  return console.log("score = " + score); // Imprime el puntaje en la consola para verificar
 }
 
-mostrarColor();
-console.log(color); // 'rojo', aún fuera de la función
 
-
-console.log(persona.nombre); // Muestra "Juan"
-console.log(persona["edad"]); // Muestra 25
-persona.direccion = "Calle 123";
-console.log(persona.direccion);  // Muestra "Calle 123"
-
-
-let isAdult = true;
-let hasPermission = false;
-
-console.log(isAdult && hasPermission); // false
-console.log(isAdult || hasPermission); // true
-console.log(!isAdult); // false
 

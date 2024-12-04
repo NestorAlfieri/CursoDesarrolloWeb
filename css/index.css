@@ -1,115 +1,123 @@
+/* Estilos de la página de inicio */
 
-     /* Estilos de la página de inicio */
-      
 
-    /* Contenedor principal */
-    .video-background {
-        position: relative; 
-      
-       overflow: hidden;
-    }
+/* Contenedor principal */
+.video-background {
+  position: relative;
 
-    /* Video de fondo */
-    .video-background video {
-        position: absolute;       
-        object-fit: cover; /* Asegura que el video cubra toda el área */
-        z-index: -1; /* Coloca el video debajo del contenido */
-    }
-  .hero-section {
-    margin-top: 7vh;
-    padding-top: 7vh;
-    font-size: 1.1rem;    
-    height: 80vh;  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-     /* Imagen de fondo */
-     background-image: url('/img/laptop.png');
-     /* Ajuste del tamaño de la imagen de fondo */
-     background-size: contain;
-     /* Posición de la imagen de fondo */
-     background-position: center;
-     /* Repetición de la imagen de fondo */
-     background-repeat: no-repeat;
+  overflow: hidden;
+}
 
-     /* Otros estilos */  
-     /* Alineación y estilo del texto */
-     text-align: center;
-     /* Color del texto en un tono morado. */
-     color: #2a2a2b;
-     /* tamaño de fuente. */   
-     line-height: 2rem; 
-    }
-  .hero-section>h2{
-    margin-bottom: 1.5rem;
-    font-size:2rem;    
-    }
-  .hero-section>img{
-    border-radius: 25px;
-    display: block;
-    width: 34%;
-    margin: 0 33%;
-    
-  }
-  #call-to-action{
-    text-decoration: none;
-    display: flex;
-    justify-content: center;    
- }
- #call-to-action>p{
-   
-    background-color: var(--color-principal);
-    color: var(--color-fuente-oscura);
-    border: 2px solid blueviolet;
-    border-radius: 8px;
-    padding: 3px 15px;
-    font-weight: bold;
-    font-size: 1.2rem;
- }
- #call-to-action>p:hover{
+/* Video de fondo */
+.video-background video {
+  position: absolute;
+  object-fit: cover;
+  /* Asegura que el video cubra toda el área */
+  z-index: -1;
+  /* Coloca el video debajo del contenido */
+}
+
+.hero-section {
+  margin-top: 7vh;
+  padding-top: 7vh;
+  font-size: 1.1rem;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Imagen de fondo */
+  background-image: url('/img/laptop.png');
+  /* Ajuste del tamaño de la imagen de fondo */
+  background-size: contain;
+  /* Posición de la imagen de fondo */
+  background-position: center;
+  /* Repetición de la imagen de fondo */
+  background-repeat: no-repeat;
+
+  /* Otros estilos */
+  /* Alineación y estilo del texto */
+  text-align: center;
+  /* Color del texto en un tono morado. */
+  color: #2a2a2b;
+  /* tamaño de fuente. */
+  line-height: 2rem;
+}
+
+.hero-section>h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.hero-section>img {
+  border-radius: 25px;
+  display: block;
+  width: 34%;
+  margin: 0 33%;
+
+}
+
+#call-to-action {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+#call-to-action>p {
+
+  background-color: var(--color-principal);
+  color: var(--color-fuente-oscura);
+  border: 2px solid blueviolet;
+  border-radius: 8px;
+  padding: 3px 15px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: all 0.5s ease-out;
+
+
+}
+
+#call-to-action>p:hover {
   color: var(--color-fuente-clara);
   background-color: blueviolet;
   border: 2px solid var(--color-fuente-clara);
 
- }
-  .hero-section>p{
-    max-inline-size: 60ch;
-    display: inline-block;
-    margin: 10px;
-    font-weight: bold;
-    font-size: 1.2rem;
-   
-  }
+}
+
+.hero-section>p {
+  max-inline-size: 60ch;
+  display: inline-block;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+
+}
 
 
-/* media query para pantallas moviles, menores a 765 px */
-  @media (max-width: 767px) {
-    .video-background video{
-     
-    }
-   
-    .hero-section{
-      background: transparent;
-      color: var(--color-fuente-clara);
-      
-      width: 80vw;
-      margin: 0 10vw;
-      height: 85vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap:25px
-      
-    }
-    .hero-section>h2{
-      text-shadow: 0 0 5px var(--color-fuente-oscura), 0 0 10px var(--color-fuente-oscura);
+/* media query para pantallas moviles, menores a 767 px */
+@media (max-width: 767px) {
+ 
+  .hero-section {
+    background: transparent;
+    color: var(--color-fuente-clara);
+    width: 80vw;
+    margin: 0 10vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px
   }
-  .hero-section>img{
+
+  .hero-section>h2 {
+    text-shadow: 0 0 5px var(--color-fuente-oscura), 0 0 10px var(--color-fuente-oscura);
+  }
+
+  .hero-section>img {
     width: 80vw;
   }
-  .hero-section>p{
+
+  .hero-section>p {
     text-shadow: 0 0 5px var(--color-fuente-oscura), 0 0 10px var(--color-fuente-oscura);
-    
-}
+
   }
- 
+}

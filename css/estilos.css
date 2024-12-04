@@ -10,7 +10,7 @@
     --color-fondo-transparencia: rgba(149, 145, 145, 0.7);
     --fuente-dinamica-subtitulo: clamp(1.2rem, 4vw, 2rem);
     --fuente-dinamica-subtitulo2: clamp(1rem, 3vw, 1.5rem);
-    --fuente-dinamica-texto: clamp(1rem, 2vw, 1.5rem);
+    --fuente-texto: clamp(1rem, 2vw, 1.5rem);
 }
 
 /* estilos del selector universal */
@@ -37,6 +37,8 @@ header {
     height: 10vh;
 }
 
+
+
 #logo-link {
     text-decoration: none;
 }
@@ -47,6 +49,7 @@ header {
     display: flex;
     align-items: center;
     gap: 20px;
+    transition: text-shadow 0.5s ease;
 
 
 }
